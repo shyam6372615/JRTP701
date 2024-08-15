@@ -1,0 +1,26 @@
+server:
+  port: 7071
+
+spring:
+  application:
+    name: JRTP701-ApplicationRegistrationService
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ss716db
+    username: root
+    password: ss756
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+  # To run schema.sql file on application startup
+  
+
+ar:
+  ssa-web:
+    url: http://localhost:9090/ssa/web-api/find/{ssnNo}
+  state: california
