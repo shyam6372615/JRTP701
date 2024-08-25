@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: JRTP701-DataCollectionModule
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ss716db
+    username: root
+    password: ss756
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: 4042   
+arm:
+  ssa-web:
+     url: http://localhost:9090/ssa-web-api/find/{ssn}   
+  stateName: california
